@@ -2,6 +2,10 @@ name: Build kernel by custom_gcc-12.1
 on:
   watch:
     types: [started]
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
   workflow_dispatch:
 

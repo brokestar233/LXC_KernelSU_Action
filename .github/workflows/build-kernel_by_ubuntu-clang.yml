@@ -2,6 +2,10 @@ name: Build Kernel by ubuntu-clang
 on:
   watch:
     types: [started]
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
   workflow_dispatch:
 

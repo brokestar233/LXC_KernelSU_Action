@@ -2,6 +2,10 @@ name: Build kernel by arter97-gcc-9.3
 on:
   watch:
     types: [started]
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
   workflow_dispatch:
 
